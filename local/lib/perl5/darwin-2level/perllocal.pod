@@ -1,0 +1,22 @@
+=head2 Wed Dec 31 16:05:51 2014: C<Module> L<Mojolicious|Mojolicious>
+
+=over 4
+
+=item *
+
+C<installed into: /Users/yamanokenji/Desktop/Perl_WEB_APPL/20141227/DivingLog/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 5.59>
+
+=item *
+
+C<EXE_FILES: script/hypnotoad script/mojo script/morbo>
+
+=back
+
