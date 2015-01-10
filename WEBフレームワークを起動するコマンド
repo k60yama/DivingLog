@@ -1,0 +1,10 @@
+ディレクトリ移動
+yamano-no-MacBook-Air:DivingLog yamanokenji$ pwd
+/Users/yamanokenji/Desktop/Perl_WEB_APPL/20141227/DivingLog
+
+WEBフレームワークを起動するコマンド
+
+MOJO_MODE=development carton exec -- morbo script/diving_log
+テストコードを実行するコマンド
+
+carton exec -- script/diving_log test -v

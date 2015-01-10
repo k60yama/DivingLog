@@ -1,0 +1,14 @@
+gitで履歴をとらないファイルを設定
+
+隠しファイルの .gitignore に設定するディレクトリ名、ファイル名を指定
+
+touch .gitignore
+
+カートンでインストールしたモジュール一式
+echo 標準出力
+>> .gitignore [.gitignoreに書き出す]
+
+echo local/ >> .gitignore
+
+ログファイル一式
+echo log/ >> .gitignore
