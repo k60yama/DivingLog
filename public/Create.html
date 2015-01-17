@@ -1,49 +1,124 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<title>Create Diving Log</title>
-		<meta name="description" content="Diving Log の新規作成ページです。">
-	</head>
-	<body>
-		<h2>Create New Log</h2>
-		<hr>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Diving Log</title>
+        <meta name="description" content="Diving Log の新規作成ページです。">
+        <link rel="stylesheet" href="/import.css">
+    </head>
 
-		<p>Please Input your Diving Log</p>
-		
-		<!-- とりあえず DivTag>
-		<!-- Title : --><!-- Text Input Field-->
-		
-		<!-- Diving Date : -->
-							<!-- Combo Box List--><!-- year -->
-							<!-- Combo Box List--><!-- month -->
-							<!-- Combo Box List--><!-- day -->
-		
-		<!-- Diving place : --><!-- Text Input Field-->
-		
-		<!-- Diving point : --><!-- Text Input Field-->
-		
-		<!-- Tank Data -->
-			<!-- Before : --><!-- Text Input Field -->
-			<!-- After : --><!-- Text Input Field -->
-		
-		<!-- Depth Data -->
-			<!-- MAX Depth : --><!-- Text Input Field -->
-			<!-- Ave. Depth : --><!-- Text Input Field -->
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <h2>Create New Log</h2>    
+                <hr>
+                <div>Please Input your Diving Log</div>
+            </header>
+            <br>
 
-		<!-- Diving Time -->
-			<!-- Entry Time : -->
-					<!-- Text Input Field --><!-- : --><!-- Text Input Field --><!-- : -->
-			<!-- Exit Time : -->
-					<!-- Text Input Field --><!-- : --><!-- Text Input Field --><!-- : -->
-			<!-- Calc Start Button-->		
-			<!-- Your Diving Time --><!-- Label--><!-- min-->
+            <div>
+                <form>  
+                    <div class="inputObject">
+                        Title : <input type="text" name="title">
+                    </div>
 
-		<!-- Picture Register -->
-			<!-- Path --><!-- Text Input Field --><!-- Show Button --><!-- Upload Button -->
-			<!-- Select Data -->
-			<!-- Picture File List -->
+                    <div class="inputObject">
+                        Diving Date : 
+                        <select name="year">
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        </select> 
+                        Year  
 
-		<!-- Save Button --> <!-- Back Button -->	
-	</body>
+                        <select name="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                        Month  
+
+                        <select name="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                        Day  
+                    </div>
+
+                    <div class="inputObject">
+                        Diving place : <input type="text" name="placeName">
+                    </div>
+
+                    <div class="inputObject"> 
+                        Diving point : <input type="text" name="pointName">
+                    </div>
+                    
+                    <div class="inputObject">
+                        Tank Data 
+                    </div>
+                    <div class="inputObject" id="inputTankData">
+                        Before : <input type="text" name="beforeVal"> bar 
+                        After  : <input type="text" name="afterVal"> bar 
+                    </div>
+
+                    <div class="inputObject"> 
+                        Depth Data 
+                    </div>
+                    <div class="inputObject" id="inputDepthData">
+                        MAX Depth  : <input type="text" name="maxDepthVal"> m 
+                        Ave.Depth  : <input type="text" name="aveDepthVal"> m
+                    </div>
+
+                    <div class="inputObject">
+                        Diving Time 
+                    </div>
+                    <div class="inputObject" id="inputDivingEntryTime">
+                        Entry Time : 
+                        <input type="text" name="divingEntryTimeHour"> : 
+                        <input type="text" name="divingEntryTimeMin"> : 
+                        <input type="text" name="divingEntryTimeSec">
+                    </div>
+                    <div class="inputObject" id="inputDivingExitTime">
+                        Exit Time : 
+                        <input type="text" name="divingExitTimeHour"> : 
+                        <input type="text" name="divingExitTimeMin"> : 
+                        <input type="text" name="divingExitTimeSec">
+                        <button type="button">Calc</button>
+                    </div>
+                    <div class="inputObject" id="calcDivingTime">
+                        Your Diving Time :
+                        <label>30</label>min
+                    </div>
+
+                    <div class="inputObject">
+                        Picture Register
+                    </div>
+                    <div class="inputObject" id="inputPath">
+                        Path : <input type="text" name="pathName">
+                        <button type="button">View</button>
+                        <button type="button">Upload</button>
+                    </div>
+                    
+                    <label id="viewPath">/Users/yamanokenji/Desktop/xxx.png</label>
+
+                    <div  class="inputObject" id="LogDataButton">
+                    <button type="button">Register</button>
+                    <button type="button">Back</button>
+                    <div>
+                </form>
+            </div>
+
+            <footer>
+                <!-- Save Button --> <!-- Back Button -->	    
+            </footer>
+        </div>
+
+
+
+
+
+
+
+    </body>
 </html>	
