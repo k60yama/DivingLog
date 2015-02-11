@@ -1,52 +1,145 @@
 @charset "utf-8";
 
-body{
-	background-color: white;
-	border : 1px solid darkgreen;
-	margin : 10px;
+/*import.css*/
+
+/* layouts
+========================================== */
+/*@import "base/reset.css";*/
+/*@import "base/structure.css";*/
+/*@import "base/header.css";*/
+/*@import "base/contents.css";*/
+/*@import "base/footer.css";*/
+
+/*reset.css*/
+/* =======================================
+    Browser Reset CSS
+    Last Up Date 0000/00/00
+========================================== */
+
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,
+p,blockquote,table,th,td {margin: 0; padding: 0;}
+
+html,body {background: #FFF; color: #000;}
+
+body {font:13px/1 "メイリオ","Meiryo","ＭＳ Ｐゴシック","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",sans-serif;}
+* html body {font-size: small;}
+*:first-child+html body {font-size: small;}
+
+img {border: 0; vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {clear: both; font-size: 100%; font-weight: normal;}
+
+ul,dl,ol {text-indent: 0;}
+li {list-style: none;}
+
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal; font-weight: normal;}
+
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+input,textarea,select {font-family: inherit; font-size: inherit; font-weight:inherit;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {text-align: left; vertical-align: top;}
+caption {text-align: left;}
+
+pre,code,kbd,samp,tt {font-family: monospace;}
+* html pre,* html code,* html kbd,* html samp,* html tt {font-size: 100%; line-height: 100%;}
+*:first-child+html pre,*:first-child html+code,*:first-child html+kbd,*:first-child+html+samp,*:first-child+html tt {font-size: 108%; line-height: 100%;}
+
+input,select,textarea {font-size: 100%; font-family: Verdana, Helvetica, sans-serif;}
+
+/*structure.css*/
+/* =======================================
+    structure CSS
+========================================== */
+
+/*header.css*/
+/* =======================================
+    header CSS
+ ========================================= */
+#header 
+{
+    padding: 20px;
 }
 
-#wrapper {
-	margin: 5px;
+#header #title
+{
+    font-size: xx-large;
+    margin-bottom: 15px;
 }
 
-.header {
-	padding: 10px;
-	border: 1px solid dimgray;
+#header #operationMsg
+{
+    font-size: large;
+    margin-top: 15px;
 }
 
-.inputObject {
-	margin-bottom: 10px;
+/*contents.css*/
+/* =======================================
+    contents CSS
+========================================== */
+#content
+{
+    padding-left: 50px;
 }
 
-#inputTankData {
-	margin-left: 50px;
+#content .inputObject
+{
+    margin-bottom: 10px;
 }
 
-#inputDepthData {
-	margin-left: 50px;
+#content .inputObject .inputTitle
+{
+    /* 各入力フィールドのテキスト位置 */
+    display: inline-block;                  
+    width: 250px;
 }
 
-#inputDivingEntryTime {
-	margin-left: 50px;
+#content .inputObject .firstInputTitle
+{
+    display: inline-block;
+    padding-left: 50px;
+    width: 200px;
 }
 
-#inputDivingExitTime {
-	margin-left: 50px;
+#content .inputObject .firstInputData 
+{
+    display: inline-block;   
+    width: 200px;
 }
 
-#calcDivingTime {
-	margin-left: 50px;
+#content .inputObject .secondInputTitle
+{
+    display: inline-block;
+    width: 100px;
 }
 
-#inputPath {
-	margin-left: 50px;
+#content .inputObject #selectPath
+{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 700px;
 }
 
-#viewPath {
-	margin-left: 50px;
+#content .buttonObject
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-#LogDataButton {
+/*footer.css*/
+/* =======================================
+    footer CSS
+========================================== */
 
-}
+/* -----.css*/
+/* =======================================
+    ----- CSS
+========================================== */

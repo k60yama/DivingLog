@@ -8,117 +8,193 @@
     </head>
 
     <body>
-        <div id="wrapper">
-            <header class="header">
-                <h2>Create New Log</h2>    
-                <hr>
-                <div>Please Input your Diving Log</div>
-            </header>
+        <!-- header here -->
+        <header id="header">
+            <h2 id="title">Create New Log</h2>    
+            <hr>
+            <div id="operationMsg">Please Input your Diving Log</div>
             <br>
+        </header>
+        <!-- header until -->
 
-            <div>
-                <form>  
-                    <div class="inputObject">
-                        Title : <input type="text" name="title">
-                    </div>
+        <!-- content here -->
+        <div id="content">
+            <form> 
+                <!-- Title here --> 
+                <div class="inputObject">
+                    <p>
+                        <span class="inputTitle">Title :</span>
+                        <span class="inputData">
+                            <input type="text" name="title">        
+                        </span>
+                    </p>
+                </div>
+                <!-- Title until -->
 
-                    <div class="inputObject">
-                        Diving Date : 
-                        <select name="year">
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        </select> 
-                        Year  
+                <!-- Diving Date here -->
+                <div class="inputObject">
+                    <p>
+                        <span class="inputTitle">Diving Date :</span>
+                                        
+                        <span class="inputData"> 
+                            <select name="year">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                            </select> 
+                            Year  
 
-                        <select name="month">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        </select>
-                        Month  
+                            <select name="month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            Month  
 
-                        <select name="day">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        </select>
-                        Day  
-                    </div>
+                            <select name="day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            Day  
+                        </span>
+                    </p>
+                </div>
+                <!-- Diving Date until -->
 
-                    <div class="inputObject">
-                        Diving place : <input type="text" name="placeName">
-                    </div>
+                <!-- Diving place here -->
+                <div class="inputObject">
+                    <p>
+                        <span class="inputTitle">Diving place : </span>
+                        <span class="inputData">
+                            <input type="text" name="placeName">
+                        </span>
+                    </p>
+                </div>
+                <!-- Diving place until -->
 
-                    <div class="inputObject"> 
-                        Diving point : <input type="text" name="pointName">
-                    </div>
-                    
-                    <div class="inputObject">
-                        Tank Data 
-                    </div>
-                    <div class="inputObject" id="inputTankData">
-                        Before : <input type="text" name="beforeVal"> bar 
-                        After  : <input type="text" name="afterVal"> bar 
-                    </div>
+                <!-- Diving point here -->
+                <div class="inputObject"> 
+                    <p>
+                        <span class="inputTitle">Diving point : </span>
+                        <span class="inputData">
+                            <input type="text" name="pointName">
+                        </span>
+                    </p>
+                </div>
+                <!-- Diving point until -->
+                
+                <!-- Tank Data here -->
+                <div class="inputObject">
+                    Tank Data 
+                </div>
+                <div class="inputObject">
+                    <p>
+                        <!-- first input -->
+                        <span class="firstInputTitle">Before : </span>
+                        <span class="firstInputData">
+                            <input type="text" name="beforeVal"> bar    
+                        </span>
 
-                    <div class="inputObject"> 
-                        Depth Data 
-                    </div>
-                    <div class="inputObject" id="inputDepthData">
-                        MAX Depth  : <input type="text" name="maxDepthVal"> m 
-                        Ave.Depth  : <input type="text" name="aveDepthVal"> m
-                    </div>
+                        <!-- second input -->
+                        <span class="secondInputTitle">After  : </span>
+                        <span class="secondInputData">
+                            <input type="text" name="afterVal"> bar
+                        </span>
+                    </p>                      
+                </div>
+                <!-- Tank Data until -->
 
-                    <div class="inputObject">
-                        Diving Time 
-                    </div>
-                    <div class="inputObject" id="inputDivingEntryTime">
-                        Entry Time : 
-                        <input type="text" name="divingEntryTimeHour"> : 
-                        <input type="text" name="divingEntryTimeMin"> : 
-                        <input type="text" name="divingEntryTimeSec">
-                    </div>
-                    <div class="inputObject" id="inputDivingExitTime">
-                        Exit Time : 
-                        <input type="text" name="divingExitTimeHour"> : 
-                        <input type="text" name="divingExitTimeMin"> : 
-                        <input type="text" name="divingExitTimeSec">
-                        <button type="button">Calc</button>
-                    </div>
-                    <div class="inputObject" id="calcDivingTime">
-                        Your Diving Time :
+                <!-- Depth Data here -->
+                <div class="inputObject"> 
+                    Depth Data 
+                </div>
+
+                <div class="inputObject">
+                    <p>
+                        <!-- first input -->
+                        <span class="firstInputTitle">MAX Depth : </span>
+                        <span class="firstInputData">
+                            <input type="text" name="maxDepthVal"> m
+                        </span>
+
+                        <!-- second input -->
+                        <span class="secondInputTitle">Ave.Depth  : </span>
+                        <span class="secondInputData">
+                            <input type="text" name="aveDepthVal"> m
+                        </span>                        
+                    </p>
+                </div>
+                <!-- Depth Data until -->
+
+                <!-- Diving Time here -->                
+                <div class="inputObject">
+                    Diving Time 
+                </div>
+                
+                <div class="inputObject">
+                    <p>
+                        <span class="firstInputTitle">Entry Time : </span>
+                        <span>
+                            <input type="text" name="divingEntryTimeHour"> : 
+                            <input type="text" name="divingEntryTimeMin"> : 
+                            <input type="text" name="divingEntryTimeSec">
+                        </span>
+                    </p>
+                </div>
+
+                <div class="inputObject">
+                    <p>
+                        <span class="firstInputTitle">Exit Time : </span>
+                        <span>
+                            <input type="text" name="divingExitTimeHour"> : 
+                            <input type="text" name="divingExitTimeMin"> : 
+                            <input type="text" name="divingExitTimeSec">
+                            <button type="button">Calc</button>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="inputObject">
+                    <p>
+                        <span class="firstInputTitle">
+                            Your Diving Time :
+                        </span>
                         <label>30</label>min
-                    </div>
+                    </p>
+                </div>
+                <!-- Diving Time until -->
 
-                    <div class="inputObject">
-                        Picture Register
-                    </div>
-                    <div class="inputObject" id="inputPath">
-                        Path : <input type="text" name="pathName">
-                        <button type="button">View</button>
-                        <button type="button">Upload</button>
-                    </div>
-                    
-                    <label id="viewPath">/Users/yamanokenji/Desktop/xxx.png</label>
+                <!-- Picture Register here -->
+                <div class="inputObject">
+                    Picture Register
+                </div>
 
-                    <div  class="inputObject" id="LogDataButton">
-                    <button type="button">Register</button>
-                    <button type="button">Back</button>
-                    <div>
-                </form>
-            </div>
+                <div class="inputObject">
+                    <p>
+                        <span class="firstInputTitle">Path : </span>
 
-            <footer>
-                <!-- Save Button --> <!-- Back Button -->	    
-            </footer>
+                        <span>
+                            <input type="text" name="pathName">
+                            <button type="button">View</button>
+                            <button type="button">Upload</button>
+                        </span>
+                    </p>
+                    <p>
+                        <label id="selectPath">/Users/yamanokenji/Desktop/xxx.png</label>
+                    </p>
+                </div>
+                
+                <!-- Picture Register until -->
+
+                <!-- Button Control until --> 
+                <div  class="buttonObject">
+                    <button type="button" style="WIDTH: 100px; HEIGHT: 40px">Register</button>
+                    <button type="button" style="WIDTH: 100px; HEIGHT: 40px">Back</button>
+                </div>
+                <!-- Button Control until -->
+            </form>
         </div>
-
-
-
-
-
-
-
+        <!-- content until -->
     </body>
 </html>	
